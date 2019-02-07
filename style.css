@@ -16,7 +16,7 @@ footer{
   align-items: center;
   background-color: rgb(40, 40, 40);
   color: white;
-  z-index: 3;
+  /* z-index: 3; */
 }
 
 main > .left{
@@ -41,6 +41,7 @@ main > .left{
   padding: 10px 30px;
 }
 
+
 .barra{
   display: flex;
   margin-left: 30px;
@@ -49,7 +50,7 @@ main > .left{
 }
 
 .barra-sin,.barra-des{
-  font-size: 20px;
+  font-size: 18px;
   color: rgb(176,176,176);
 }
 
@@ -77,7 +78,7 @@ main > .left{
 }
 
 main > .right{
-  width: 85%;
+  width: 90%;
   height: 100vh;
   background-color: rgb(31,34,35);
   padding: 0 30px;
@@ -99,7 +100,16 @@ main > .right{
   padding: 5px 10px;
   margin: 10px;
 }
+.hamburger{
+  /* visibility: hidden; */
+  display: none;
 
+}
+
+.hb{
+  width: 70px;
+  color: white;
+}
 .sec1:hover{
   color: white;
 }
@@ -107,6 +117,7 @@ main > .right{
 .pic{
   text-align: right;
   font-size: 18px;
+
 }
 
 .blocco{
@@ -178,15 +189,68 @@ footer img{
 
 .player-line{
   border: 2px solid grey;
-  width: 600px;
+  width: 500px;
 }
 
 .footer-right{
-  border: 2px solid grey;
-  width:200px;
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
 
+}
+.volume{
+  margin-right: 10px;
+}
+.volume-linea{
+  border: 2px solid grey;
+  width:150px;
+  height: 2px;
 }
 
 *{
   box-sizing: border-box;
+}
+
+@media screen and (max-width:900px) {
+  .barra-des{
+    display: none !important;
+  }
+
+  .left{
+    width:10% !important;
+
+  }
+
+  .logo{
+    display: none !important;
+
+  }
+  .footer-left{
+    display: none !important;
+  }
+
+  .footer-right{
+    display: none !important;
+  }
+
+  .player-line{
+    max-width: 300px !important;
+  }
+
+  .footer-center{
+    margin: auto;
+  }
+
+  .pic{
+    display: none!important;
+  }
+
+  .sec1{
+    display: none !important;
+  }
+  .hamburger{
+    visibility: visible;
+    display: block;
+
+  }
 }
